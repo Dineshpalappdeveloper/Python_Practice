@@ -104,6 +104,9 @@ dinesh'''  # miltiline unoffisial comment
 # t = (2, 525, "dkp", "si")
 # print(t, type(t))  # (2, 525, 'dkp', 'si') <class 'tuple'>
 
+
+# Dictionary
+
 # Dictionary data type (it accept value in key and pair and we can acces useing its key and we can also update it)
 
 # d = {
@@ -113,3 +116,115 @@ dinesh'''  # miltiline unoffisial comment
 # print(d)  # "{'name': 'dinesh', 'sName': 'pal'}
 # d["name"] = "Ganesh"
 # print(d, type(d))  # {'name': 'Ganesh', 'sName': 'pal'} <class 'dict'>
+
+# sets (set can not duplicate and not changeable ) it remove duplicate value
+
+# s = {5, 5, 10, 26, 50, 26}
+# print(s, type(s))  # {10, 26, 50, 5} <class 'set'>
+
+# get user input and type casting
+#  input  (it take input from user on runtime )
+# int() it take only integer value
+# float() it take only float value
+# Eval() it handle all type value (integer,float,bianary)
+# c = eval(input("Enetr First Value:- "))
+# a = eval(input("Enter Your First Name:-"))
+# d =eval (input("Enter Second Value:-"))
+# f = c+d
+# print(e, type(e))
+# print(f, type(f))
+
+
+# conditional statement
+
+# if
+
+# a = 20
+# if a % 2 == 0:
+#     print(a, "Even Number")
+
+
+# if and else
+
+# a = 20
+# if a % 2 == 0:
+#     print(a, "Even Number")
+# else:
+#     print(a, "Odd Number")
+
+
+# if and elif elif else
+
+# per = 50
+# if per >= 60:
+#     print("First Div")
+# elif per >= 45:
+#     print("Second Div")
+# elif per >= 30:
+#     print("Third Div")
+# else:
+#     print("Fail")
+
+# basic calculator use if elif and else
+
+# num1 = 505
+# num2 = 320
+# opt = "5"
+
+# if opt == "+":
+#     print(num1+num2)
+# elif opt == "-":
+#     print(num1-num2)
+# elif opt == "/":
+#     print(num1/num2)
+# elif opt == "*":
+#     print(num1*num2)
+# else:
+#     print("invalid opt")
+
+# for loop
+
+# range
+
+# range(5) # output - 0,1,2,3,4
+# it have some defalut value
+# default start value 0
+# default less than 5 (in this case  range(5) )
+# default increment 1
+
+
+range(1, 6)  # output- 1,2,3,4,5
+# first start form
+#  less than 6
+# increment by 1
+
+range(1, 6, 2)  # output- 1,3,5
+# first start form
+# second less than
+# third increment
+
+# table of 3 useing for loop with range
+
+# x = 3
+# for n in range(1, 11, 1):
+#     print(x, "*", n, "=", n*x)
+
+# for loop with reverse useing range
+
+# for n in range(10, 0, -1):
+#     print(n)
+
+# while loop
+
+# i = 1
+# while i <= 10:
+#     print(i, "Welcome Dkp")
+#     i = i+1
+# print(i) #output:- 11
+# reversed
+
+# i = 10
+# while i >= 1:
+#     print(i, "Welcome Dkp")
+#     i = i-1
+# print(i) # output-0
