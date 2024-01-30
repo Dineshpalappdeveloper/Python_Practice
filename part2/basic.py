@@ -228,3 +228,12 @@ l = [25, 36, 5, 69, 665, 655, 25, 50, 75, 100]
 
 
 # print(p) # ['w', 'e', 'l', 'c', 'o', 'm', 'e', '-', ' ', 't', 'o', ' ', 'm', 'y', 'p', 'u', 's', 't', 'a', 'k']
+
+# model for  advance  js
+
+def sum(a, b):
+    return a+b
+
+
+def mul(a, b):
+    return a*b

@@ -158,9 +158,81 @@
 
 # with return
 
-def sum(a, b):
-    return a+b, a*b
+# def sum(a, b):
+#     return a+b, a*b
 
 
-ot = sum(25, 35)
-print(ot)
+# ot = sum(25, 35)
+# print(ot)
+
+# with multiple return
+
+# model define in basic js
+
+# method first
+
+# import basic
+
+# print(basic.sum(52, 48))
+# print(basic.mul(25, 25))
+
+# method 2
+
+# from basic import sum, mul
+
+# print(sum(253, 10))
+# print(mul(25, 225))
+
+# method 3 sabse best
+
+# from basic import *
+
+# print(sum(253, 1))
+# print(mul(25, 225))
+
+# useing aliyas (it means aapne maan se kuch bhi name de sakte hai)
+
+# import basic as m
+
+# print(m.sum(253, 1))
+# print(m.mul(25, 225))
+
+#  functions in math
+
+# import math
+# x = 12.1
+
+# print(math.ceil(x)) # 13 it remove decimal by increasing the value but need to import math
+
+# print(math.fabs(-15)) #  ot-15 (it always return positive value according to input)
+
+# print(math.factorial(4))  # ot-24  return factorial of given number
+
+# print(math.floor(10.6)) # ot-10 its use to remove the decimal value by decreasing the original value
+
+# l = [25, 25, 50, 25]
+
+# print(math.fsum(l)) # 125.0 it final sum of array(list) and tupple
+
+# print(math.sqrt(25))  # return squreroot value og given integer in decimal
+
+# import random
+
+# it return random number by includeing start and end value(0,10,5,6)
+# print(random.randint(1, 10))
+
+# it return random number by includeing start value only and not return end value(0,10,5,6)
+# print(random.randrange(1, 10))
+
+# l = [25, 36, 56, 699]
+# print(random.choice(l)) # it any from given list
+
+# print(random.random()) # it return always return decimal value between 0 to 1
+
+# random.shuffle(l)
+# print(l)  # ot-[36, 699, 56, 25] it use to change the index of list
+
+# print(random.uniform(5, 10))  # ot- 5.381470568096308 it return decimal value between given number
+
+
+# datetime fuctions
