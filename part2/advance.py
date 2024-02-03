@@ -208,7 +208,8 @@
 
 # print(math.factorial(4))  # ot-24  return factorial of given number
 
-# print(math.floor(10.6)) # ot-10 its use to remove the decimal value by decreasing the original value
+# print(math.floor(10.6))
+# ot-10 its use to remove the decimal value by decreasing the original value
 
 # l = [25, 25, 50, 25]
 
@@ -236,3 +237,290 @@
 
 
 # datetime fuctions
+# import datetime
+
+# d = datetime.datetime.now()
+
+# print(d)  # return current date and time ot-2024-01-30 08:11:50.783009
+# print(d.strftime("%Y"))  # 2024 return current year and many value search on google if you wants
+
+# d = datetime.datetime(2003, 2, 20)  # 2003-02-20 00:00:00
+# print(d)
+
+# pickle in python
+
+# import json
+
+# d = {
+#     "name": "dinesh",
+#     "home": "gaya",
+#     "dist": "gaya",
+#     "state": "bihar"
+# }
+# f = json.dumps(d)
+# print(f, type(f))
+
+
+# import json
+# d = '{"name":"dinesh","city":"kolkata"}'
+# s = json.loads(d)
+# print(s, type(s))
+
+# how to read  other file data
+
+# import json
+# file = open("post.json", "r")
+# x = file.read()
+# fileData = json.loads(x)
+# print(fileData) # unable to open json file
+
+# oops object oriented programming language
+
+# class DemoClass:
+#     a = 10
+
+#     def sanvalue(self):
+#         print(101+7)
+
+
+# demoobject = DemoClass()
+# print(demoobject.a)  # ot-10
+# demoobject.sanvalue()  # ot-108
+
+# method and constructor in oop
+
+# class DemoClass:
+#     a = 108
+
+#     def sum(self):
+#         b = self.a*self.a
+#         print(b) # ot-11664
+
+
+# obj = DemoClass()
+# obj.sum()
+
+# with parameter
+
+# class DemoClass:
+#     a = 108
+
+#     def sum(self, d, e):
+#         b = self.a*self.a
+#         print(b*d*e)  # ot-136048896
+
+
+# obj = DemoClass()
+# obj.sum(108, 108)
+
+# constructer (define with __init__ key it is predefine and it aotomically called)
+
+# class DemoClass:
+#     a = 108
+
+#     def sum(self, d, e):
+#         b = self.a*self.a
+#         print(b*d*e)
+
+#     def __init__(self):
+#         print("welcome Dinesh")
+
+
+# obj = DemoClass()
+# obj.sum(108, 108)
+# ot- welcome Dinesh
+# 136048896
+
+# inheritance in python
+# child class can use parent class variable this is called inheritance
+
+# there are three main inheritance
+# 1. single inheritance
+# 2.multilababel inheritance
+# 3.multiple inheritance
+
+# single inheritance
+
+# class A:
+#     def displayA(self):
+#         print("A.Welcome Dinesh")
+
+
+# class B(A):  # here class B is inherited the class A (it means b is able to use the class a variables)
+#     def displayB(self):
+#         print("B.Welcome Ganesh jee")
+
+
+# obj = B()
+# obj.displayA()
+# obj.displayB()
+
+# multilable inheritance
+
+# class A:
+#     def displayA(self):
+#         print("A.Welcome Dinesh")
+
+
+# class B(A):  # here class B is inherited the class A (it means b is able to use the class a variables)
+#     def displayB(self):
+#         print("B.Welcome Ganesh jee")
+
+
+# class C(B): # here class C is inherited the class A and B (it means C is able to use the class a nad b variables)
+#     def displayC(self):
+#         print("C.Welcome to Donocare.com")
+
+
+# obj = C()
+# obj.displayA()
+# obj.displayB()
+# obj.displayC()
+
+# multiple inheritance
+
+# class A:
+#     def displayA(self):
+#         print("A.Welcome Dinesh")
+
+
+# class B():
+#     def displayB(self):
+#         print("B.Welcome Ganesh jee")
+
+
+# class C(A, B):  # here class C is inherited the class A and B (it means C is able to use the class a and b variables)
+#     def displayC(self):
+#         print("C.Welcome to Donocare.com")
+
+
+# obj = C()
+# obj.displayA()
+# obj.displayB()
+# obj.displayC()
+
+# Encapsulation :- encapsulation is use for makeing private variable and functin(you can within the function not outside )
+
+# geter and seter in Encapsulation
+
+# class Student:
+#     def __init__(self):
+#         self.__name = ""
+
+#     def getname(self):
+#         return self.__name
+
+#     def setname(self, name):
+#         self.__name = name
+
+
+# obj = Student()
+# obj.setname("Donocare.com")
+# name = obj.getname()
+# print(name) # Donocare
+
+# class Student:
+#     __name = "Donocare"
+
+#     def __init__(self):
+#         print(self.__name)
+
+#     def __userInfo(self):
+#         print("Welcome to Donocare")
+
+
+# obj = Student()
+
+# ploymorphism
+
+# it same function name but different signature
+
+# l = [21, 25, 36, 85]
+# print(len(l))
+# s = "welcome Dinesh"
+# print(len(s))
+# function name len() same but first time returnign the array length and second time returning the word length
+
+# class Do:
+#     def Dispaly(self, name=""):
+#         print("welcome to Donocare", name)
+
+
+# obj = Do()
+# obj.Dispaly()  # welcome to Donocare
+# # example of overloading
+# obj.Dispaly("Dinesh")  # welcome to Donocare Dinesh
+
+
+# example of overridding
+# class Du:
+#     def DisplayInfo(self):
+#         print("Welcome to Goa")
+
+
+# class IIP(Du):
+#     def DisplayInfo(self):
+#         # super function is used to call name function those are define in parent
+#         super().DisplayInfo()
+#         print("welcome to IIp")  # example of overridding
+
+
+# obj = IIP()
+# obj.DisplayInfo()
+
+# exmple of overloading
+
+# class Area:
+#     def find_area(self, x=None, y=None):
+#         if x != None and y != None:
+#             print(x*y)
+#         elif x != None:
+#             print(x*x)
+#         else:
+#             print("nothing ")
+
+
+# obj = Area()
+# obj.find_area()  # nothing
+# obj.find_area(10, 20)  # nothing
+# obj.find_area(50)  # nothing
+
+# overriding
+
+# class A:
+#     def showData(self):
+#         print("A function called")
+
+
+# class B(A):
+#     def showData(self):
+#         print("B function called")
+
+
+# obj = B()
+# obj.showData()
+
+# A Bike Rental System
+
+# error handleing
+
+# 1.syntax error
+# 2. logical error
+
+# 1.syntax error
+
+# a=10
+# b=20
+# if a==b
+#     print("true") # SyntaxError: expected ':'
+# else
+#     print("false")
+
+# 2. logical error
+
+a = 10
+b = 0
+c = a/b
+l = [54, 36, 58]
+print(l[4])
+print(c)
